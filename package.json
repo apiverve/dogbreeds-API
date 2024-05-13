@@ -1,0 +1,32 @@
+{
+  "name": "@apiverve/dogbreeds",
+  "version": "1.0.0",
+  "description": "Dog Breeds is a simple tool for getting information about dog breeds. It returns information such as breed name, temperament, lifespan, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/dogbreeds-API.git"
+  },
+  "keywords": [
+    "dog breeds"," dog breeds api"," dog breeds tool"," dog breeds software"," dog breeds service"," dog breeds library"," dog breeds sdk"," dog breeds code"," dog breeds script"," dog breeds program"," dog breeds application"," dog breeds app"," dog breeds utility"," dog breeds helper"," dog breeds helper tool"," dog breeds helper software"," dog breeds helper service"," dog breeds helper library"," dog breeds helper sdk"," dog breeds helper code"," dog breeds helper script"," dog breeds helper program"," dog breeds helper application"," dog breeds helper app"," dog breeds helper utility"," dog breeds helper"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/dogbreeds-API/issues"
+  },
+  "homepage": "https://github.com/apiverve/dogbreeds-API",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1",
+    "dotenv": "^2.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "3.3.2",
+    "promise": "^7.1.1",
+    "request": "^2.69.0"
+  }
+}
