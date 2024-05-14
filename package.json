@@ -11,7 +11,7 @@
     "url": "git+https://github.com/apiverve/dogbreeds-API.git"
   },
   "keywords": [
-    "dog breeds"," dog breeds api"," dog breeds tool"," dog breeds software"," dog breeds service"," dog breeds library"," dog breeds sdk"," dog breeds code"," dog breeds script"," dog breeds program"," dog breeds application"," dog breeds app"," dog breeds utility"," dog breeds helper"," dog breeds helper tool"," dog breeds helper software"," dog breeds helper service"," dog breeds helper library"," dog breeds helper sdk"," dog breeds helper code"," dog breeds helper script"," dog breeds helper program"," dog breeds helper application"," dog breeds helper app"," dog breeds helper utility"," dog breeds helper"
+    "dog breeds","dog breeds api","dog breeds tool","dog breeds software","dog breeds service"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
@@ -27,6 +27,6 @@
   "dependencies": {
     "node-fetch": "3.3.2",
     "promise": "^7.1.1",
-    "request": "^2.69.0"
+    "axios": "^0.15.3"
   }
 }
