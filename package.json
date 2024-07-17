@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/dogbreeds",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Dog Breeds is a simple tool for getting information about dog breeds. It returns information such as breed name, temperament, lifespan, and more.",
   "main": "index.js",
   "scripts": {
