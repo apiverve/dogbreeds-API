@@ -1,0 +1,86 @@
+openapi: 3.0.4
+info:
+  title: Dog Breeds
+  description: Dog Breeds is a simple tool for getting information about dog breeds. It returns information such as breed name, temperament, lifespan, and more.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/dogbreeds:
+    get:
+      summary: Get Dog Breed Information
+      description: Dog Breeds is a simple tool for getting information about dog breeds. It returns information such as breed name, temperament, lifespan, and more.
+      operationId: dogbreeds
+      parameters:
+      - name: breed
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The name of the dog breed to get information about
+        example: beagle
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  breed: beagle
+                  foundCount: 1
+                  foundBreeds:
+                  - name: Beagle
+                    weight:
+                      lowerLbs: 20
+                      upperLbs: 35
+                    height:
+                      lowerInches: 13
+                      upperInches: 15
+                    bredFor: rabbit, hare hunting
+                    group: hound
+                    life_span:
+                      lowerYears: 13
+                      upperYears: 16
+                    traits:
+                    - amiable
+                    - even tempered
+                    - excitable
+                    - determined
+                    - gentle
+                    - intelligent
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
